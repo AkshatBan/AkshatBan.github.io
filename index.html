@@ -5,21 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Akshat Bansal</title>
   <link href="dist/output.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
   <!-- Header Section -->
-  <header class="bg-blue-600 text-white py-8">
-    <div class="container mx-auto text-center">
+  <header class="relative py-24">
+    <div class="absolute inset-0">
+      <div class="slideshow">
+        <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100">
+          <img src="assets/coding-background.jpg" alt="Slide 1" class="w-full h-full object-cover brightness-75">
+        </div>
+        <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+          <img src="assets/mountains.png" alt="Slide 2" class="w-full h-full object-cover brightness-75">
+        </div>
+        <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+          <img src="assets/ford-mustang.jpg" alt="Slide 3" class="w-full h-full object-cover brightness-75">
+        </div>
+        <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+          <img src="assets/guitar-strings.jpg" alt="Slide 4" class="w-full h-full object-cover brightness-75">
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-white opacity-75"></div>
+    </div>
+    <div class="relative container mx-auto text-center">
       <h1 class="text-4xl font-bold">Hi, I'm Akshat!</h1>
-      <p class="mt-2 text-lg">A Computer Science/Philosophy Graduate & Aspiring Software Engineer</p>
+      <p class="mt-2 font-bold text-lg">A Computer Science/Philosophy Graduate & Aspiring Software Engineer</p>
     </div>
   </header>
 
   <!-- About Section -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-gradient-to-b from-blue-600 to-blue-200 text-white">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-6">About Me</h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+      <p class="text-lg text-white max-w-3xl mx-auto">
         I believe in building high-quality software using a holistic approach; blending effective technical solutions with intuitive, user-friendly design. My strong background in both computer science and philosophy allows me to develop clean software and effectively communicate complex concepts. I am an effective team player who is trained to think critically and remain open-minded to innovative ideas.
       </p>
     </div>
@@ -29,10 +47,13 @@
   <section class="py-16 bg-gray-100">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <p class="text-lg text-center max-w-2xl mx-auto mb-10">
+        This section showcases my personal projects. These projects highlight my ability to independently develop software solutions, explore new technologies, and apply my skills to real-world problems.
+      </p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Example Project -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="assets/ai-assistant-scrnshot.png" alt="Project Screenshot" class="w-full" width="400" height="200">
+          <img src="assets/ai-assistant-scrnshot.png" alt="Project Screenshot" class="w-full h-52 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-bold">Voice-Activated AI Assistant</h3>
             <p class="text-gray-600 mt-2">
@@ -50,13 +71,13 @@
   <section class="py-16 bg-white">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-10">School Projects</h2>
-      <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-10">
+      <p class="text-lg text-center max-w-2xl mx-auto mb-10">
         This section showcases projects that I have completed as part of my academic coursework. These projects are team projects and demonstrate my ability to apply theoretical knowledge to practical problems and collaborate with peers in a structured environment.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Example School Project -->
         <div class="bg-gray-100 shadow-md rounded-lg overflow-hidden">
-          <img src="assets/school-project-scrnshot.png" alt="School Project Screenshot" class="w-full" width="400" height="200">
+          <img src="assets/buckymon-go-scrnshot.png" alt="School Project Screenshot" class="w-full h-52 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-bold">Buckymon Go</h3>
             <p class="text-gray-600 mt-2">
@@ -70,10 +91,10 @@
   </section>
 
   <!-- Resume Section -->
-  <section class="py-16 bg-gray-100">
+  <section class="py-16 bg-gradient-to-b from-white to-blue-200">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-6">Resume</h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
+      <p class="text-lg max-w-2xl mx-auto mb-6">
         Download my resume to learn more about my professional background, skills, and experiences.
       </p>
       <a href="assets/Akshat_Bansal_Resume.pdf" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700" download>Download Resume</a>
@@ -81,14 +102,14 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-gradient-to-b from-blue-200 to-blue-600 text-white">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      <p class="text-lg text-white max-w-2xl mx-auto">
         I'm actively seeking software engineering roles. Feel free to reach out to discuss opportunities, collaborations, or just to connect!
       </p>
       <div class="mt-6">
-        <a href="mailto:akshat.bansal2024@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700">Email Me</a>
+        <a href="mailto:akshat.bansal2024@gmail.com" class="ml-4 bg-gray-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-900">Email Me</a>
         <a href="https://www.linkedin.com/in/akshat-bansal/" class="ml-4 bg-gray-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-900">Connect on LinkedIn</a>
       </div>
     </div>
